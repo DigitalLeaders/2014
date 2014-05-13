@@ -10,6 +10,7 @@
             width: 780px;
             margin: 0px auto;
             padding: 20px 50px;
+            display: block;
         }
         h1, h2, h3 {
             font-family: fantasy;
@@ -28,14 +29,58 @@
 
         <p>Welcome to my home page!</p>
         
-        <h2>Last week</h2>
+        <p><a name="useful-links"></a>Useful Links:</p>
+        <ul>
+            <li><a href="https://developer.mozilla.org/en/docs/Web/Guide/HTML/HTML5/HTML5_element_list">A list of all HTML elements</a></li>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Getting_started">Getting started with CSS</a></li>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference">Big list of CSS attributes</a></li>
+            <li><a href="http://html-color-codes.info/">Find HEX color codes</a></li>
+        </ul>
         
-        <p>Last week we learned about HTML tags which look like: <code>&lt;html&gt;&lt;/html&gt;</code>. HTML tags usually have an opening and closing tag.</p>
-        <p>They often also have "attributes" and "values" which provide more information about what a tag should do. Attributes and values always go together in pairs, and look like this: <code>attribute="value"</code>. The equals sign and the quote marks are very important.</p>
+        <h2>Week 3 - CSS colors and fonts</h2>
         
-        <p>We saw a good example of this when we learned how to make links: <code>&lt;a href="http://www.google.co.uk"&gt;Click Me&lt;/a&gt;</code>. The link tag is called "a" for anchor. Inside the "a" tag we have an attribute called "href" which we can use to tell the link where it should go when it is clicked.</p>
+        <p>This week we are going to learn about changing colors and fonts with CSS.</p>
+        <p><strong>NOTE:</strong> In CSS and other programming languages, colour is spelt the American way, without the 'u'. So it's always 'color' not 'colour'!!!</p>
         
-        <h2>This week</h2>
+        <h3>How CSS Works</h3>
+        
+        <p>We are going to put our CSS into <code>&lt;style&gt;&lt;/style&gt;</code> tags that live inside of our <code>&lt;head&gt;&lt;/head&gt;</code> section.</p>
+        
+        <p>Each block of CSS is called a <code>"rule"</code>. Each rule is made up  of a <code>"selector"</code> which says what bit of HTML the rule should apply to, and a set of <code>"declarations"</code> which say what should happen. Declarations are made up of pairs of <code>"attributes"</code> and <code>"values"</code> just like in HTML.</p>
+        <p>Here is an example CSS rule:</p>
+        
+        <p><code><pre>
+body {
+    background: #ff0000;
+}</pre></code></p>
+        
+        <p>Here's what each of the parts means:
+        <ul>
+            <li><code>body</code> - this is the "selector". It is the HTML tag that we want the rule to apply to. In this case, body is the whole document that we can see in our browser. This could be any tag like 'h1' or 'a'.</li>
+            <li><code>{ }</code> - this marks our set of "declarations". You must always wrap your declarations in curly braces.</li>
+            <li><code>background: #ff0000;</code> - this is a single declaration, it is made up of an attribute and a value:
+                <ul>
+                    <li><code>background</code> - this is our attribute, this is the thing that we want to change. Background means the space behind everything.</li>
+                    <li><code>:</code> - this marks the space between our attribute and our value</li>
+                    <li><code>#ff0000</code> - this is called a 'HEX value' and represents a color.</li>
+                    <li><code>;</code> - this marks the end of our value.
+                </ul>
+            </li>
+        </ul>
+        </p>
+    
+        <p>So CSS is made up of <code>"attributes"</code> and <code>"values"</code> just like in HTML, but in HTML we write them like <code>attribute="value"</code> and in CSS we write them like <code>attribute: value;</code>. This is called "syntax", it is the rules of the language, like grammar rules in English. Once you've learnt the syntax, you can find out all about what sorts of attributes and values there are by reading the MDN documentation in my <a href="#useful-links">useful links</a> section.</p>    
+    
+        <h3>Challenges</h3>
+    
+        <ol>
+            <li>Can you change the background color of your page?</li>
+            <li>Can you set a backgorund image? Hint: look at this page!</li>
+            <li>Can you change the colour of the main heading?</li>
+            <li>Can you change the font?</li>
+        </ol>
+    
+        <h2>Week 2 - Images</h2>
         
         <p>This week we are going to learn lots more about HTML.</p>
         
@@ -43,10 +88,14 @@
         
         <p>Can you add an image to your page?</p>
         <p>Images are added with the <code>&lt;img /&gt;</code> tag. The image tag doesn't have a closing tag. We use an attribute called "src" to tell the tag which image to show: <code>&lt;img src="../shared/images/kitten.jpeg" /&gt;</code>.</p>
+    
+        <p><strong>NOTE:</strong> If you're inside a folder, and want to link to an image that is in a folder above (e.g. if you are in your folder, and want to link to a shared image) you need to start the path to your image with <code>../</code></p>
         
         <h3>Challenge 2</h3>
         
         <p>Can you add a link to someone else's page on your page?</p>
+        
+        <h3>Challenge 3</h3>
         
         <p>Here are some more HTML tags you can play with. Find out what they do:</p>
         <ul>
@@ -60,6 +109,13 @@
             <li><code>&lt;hr /&gt;</code></li>
             <li><code>&lt;br /&gt;</code></li>
         </ul>
+        
+        <h2>Week 1 - Learning HTML</h2>
+        
+        <p>Last week we learned about HTML tags which look like: <code>&lt;html&gt;&lt;/html&gt;</code>. HTML tags usually have an opening and closing tag.</p>
+        <p>They often also have <code>"attributes"</code> and <code>"values"</code> which provide more information about what a tag should do. Attributes and values always go together in pairs, and look like this: <code>attribute="value"</code>. The equals sign and the quote marks are very important.</p>
+        
+        <p>We saw a good example of this when we learned how to make links: <code>&lt;a href="http://www.google.co.uk"&gt;Click Me&lt;/a&gt;</code>. The link tag is called "a" for anchor. Inside the "a" tag we have an attribute called "href" which we can use to tell the link where it should go when it is clicked.</p>
         
         
     </section>
