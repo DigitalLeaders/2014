@@ -1,5 +1,41 @@
 <html> 
 <head>
     <title>Endergames home</title>
+    <style>
+        body {
+            background: url(http://media1.giphy.com/media/EaDteVN8txnxu/200_s.gif
+            }
+        .page {
+            background: #fff;
+            width: 780px;
+            margin: 0px auto;
+            padding: 20px 50px;
+        }
+        h1, h2, h3 {
+            text-shadow: 1px 1px 2px black, 0 0 1em blue, 0 0 0.2em blue;
+            font-family:;
+         color:#DE14CA;   
+        }
+        <div class="examplemonospace">
+        h1 {
+            font-size: 48px;
+            color:#DE14CA;
+        }
+  p {
+            font-size: 48px;
+            color:#C12FE1;
+        }        
+  a {
+            font-size: 48px;
+            color:#E15F2F;
+        }               
+        }
+        code {
+            background: #ececec;
+        }
+    </style>
+   <a href="http://www.youtube.co.uk">Click Me</a>
+  <p>I would gratefully love your support so dont for get to leave a like and subscribe!
+  also leave a like on my videos</p>
 </head>
 <body>
