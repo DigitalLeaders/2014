@@ -21,6 +21,53 @@
         code {
             background: #ececec;
         }
+        
+        /* Top Tip Box */
+        .toptip {
+            background: #a3caff;
+            border: 1px solid #006cff;
+            padding: 15px;
+        }
+        
+        .toptip .title {
+            background: #3b8eff;
+            border-bottom: 1px solid #006cff;
+            border-right: 1px solid #006cff;
+            padding: 3px;
+            width: 120px;
+            margin-left: -15px;
+            margin-top: -15px;
+        }
+        
+        .example-div {
+            border: 1px black solid;
+        }
+        .example-div-2 {
+            border: 1px black solid;  
+            width: 150px;
+        }
+        .example-div-3 {
+            border: 1px black solid;   
+            width: 150px;
+            padding: 20px;
+        }
+        .example-div-4 {
+            border: 1px black solid;   
+            width: 150px;
+            padding: 20px;
+            margin: 0px auto;
+        }
+        .example-div-5 {
+            border: 1px black solid;   
+            width: 150px;
+            padding: 20px;
+        }
+        .example-div-6 {
+            border: 1px black solid;   
+            width: 100px;
+            padding: 20px;
+            margin: 0px auto;
+        }
     </style>
 </head>
 <body>
@@ -36,6 +83,49 @@
             <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference">Big list of CSS attributes</a></li>
             <li><a href="http://html-color-codes.info/">Find HEX color codes</a></li>
         </ul>
+        
+        <blockquote class="toptip">
+            <div class="title"><strong>Top Tip:</strong> Linking!</div>
+            <p>There are two types of link: 1. <code>absolute</code>, where you link to a different site and it starts with 'http:' and 2. <code>relative</code> where you link to something on your own site. You can use both of these for making links in <code>&lt;a&gt;</code> tags or for the <code>src</code> attribute in <code>&lt;img&gt;</code> for adding images.</p>
+            <p>When making relative links between folders, you have to use <code>../</code> to go back a level. So if I want to make a link from my page here, to Miss Ramm's page, I have to use link code which looks like this: <code>&lt;a href="../missramm"&gt;Miss Ramm&lt;/a&gt;.</code> - and works like this: <a href="../missramm">Miss Ramm</a>.
+            </p>
+            <p></p>
+        
+        </blockquote>
+        
+        
+        <h2>Week 5 &amp; 6 - Boxes</h2>
+        
+        <p>In HTML most of the elements are boxes. Normally you don't see the boxes, but look at the 'Top Tip' box above - if you add a border or background colour, you can start to see the box and make interesting things.</p>
+        <p>In the first week when we looked at some code, some of you asked what the <code>&lt;div&gt;</code> tag was - well, it's just a tag that does nothing and is used for making boxes:</p>
+        
+        <div class="example-div">I am a box</div>
+        
+        <p>You can give a box a width:</p>
+        
+        <div class="example-div-2">I am a box</div>
+        
+        <p>You can add space on the inside - called padding: </p>
+        
+        <div class="example-div-3">I am a box</div>
+        
+        <p>You can put it in the centre:</p>
+        
+        <div class="example-div-4">I am a box</div>
+        
+        <p>You can even put boxes inside other boxes:</p>
+        
+        <div class="example-div-5">I am a box<div class="example-div-6">I am a box</div></div>
+        
+        <p><strong>Remember!</strong> all of the code for these boxes is on this page, view the source to see how it works!</p>
+        
+        <p>Boxes in HTML have lots of CSS properties you can play with - border, background, width, height, padding and margin. This picture below shows how they all work together:</p>
+        
+        <img src="http://www.codeproject.com/KB/HTML/567385/boxmodel-image.png" />
+        
+        <h3>Challenge!</h3>
+        <p>Have a play with boxes and see what interesting things you can make!</p>
+        
         
         <h2>Week 3 - CSS colors and fonts</h2>
         
