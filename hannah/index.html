@@ -68,6 +68,10 @@
             padding: 20px;
             margin: 0px auto;
         }
+        
+        a.fancy { text-decoration: underline; }
+        a.fancy:hover { text-decoration: none; background: #581b7e; padding: 10px; color: #fff}
+        
     </style>
 </head>
 <body>
@@ -92,6 +96,28 @@
             <p></p>
         
         </blockquote>
+        
+        <h2>Week 8 - Mouse Interactions</h2>
+        
+        <p>Hover your mouse over this link:</p>
+        
+        <a class="fancy" href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference">A link</a>
+        
+        <p>It changes! It's really easy to make HTML elements do things when you hover your mouse over it using some simple CSS.</p>
+        
+        <p>First, make a rule for what the element looks like when it doesn't have a mouse pointer hovering over it:</p>
+        <code>
+            a { text-decoration: underline; }
+        </code>
+        
+        <p>Next, make a second rule for what the element looks like when it DOES have a mouse pointer hovering over it using <code>:hover</code>:</p>
+        <code>
+            a:hover { text-decoration: none; background: #581b7e; padding: 10px; color: #fff }
+        </code>
+        
+        <h3>Challenge</h3>
+        
+        <p>Make an element on an HTML page which changes when you hover your mouse over it!</p>
         
         <h2>Week 6 - Posters</h2>
         
